@@ -59,8 +59,10 @@
       if (document.getElementById("methodSelect").selectedIndex === 0){
         flipImageWithCSS();
       }else if (document.getElementById("methodSelect").selectedIndex === 1){
+        document.getElementById("image").style.transform = "";
         flipImageWithCanvas();
       }else{
+        document.getElementById("image").style.transform = "";
         flipImageWithWebTWAIN();
       }
     })
